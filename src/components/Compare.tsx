@@ -75,7 +75,7 @@ export default function Compare() {
       </Reveal>
 
       <Reveal className="mt-8 flex flex-wrap items-center gap-5">
-        <Button href="#about">Read our story</Button>
+        <Button href="/about-us">Read our story</Button>
         <div className="flex items-center">
           {["av1.jpg", "av2.jpg", "av3.jpg"].map((a) => (
             <img key={a} src={`/img/${a}`} alt="" className="-mr-2 h-9 w-9 rounded-full border-2 border-page object-cover" />

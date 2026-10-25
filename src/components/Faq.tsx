@@ -5,7 +5,7 @@ import { useState } from "react";
 import { faqs } from "@/data";
 import { Button, Panel, Reveal, SectionHead } from "./ui";
 
-export default function Faq() {
+export default function Faq({ showMore = true }: { showMore?: boolean }) {
   const [open, setOpen] = useState<number | null>(null);
   return (
     <section className="mx-auto max-w-[632px] px-4 py-28">
@@ -38,6 +38,7 @@ export default function Faq() {
           })}
         </Panel>
       </Reveal>
+      {showMore && (
       <Reveal className="mt-10 flex flex-col items-center">
         <div className="flex">
           {["f1.png", "f2.png", "f3.png"].map((a, k) => (
@@ -45,10 +46,9 @@ export default function Faq() {
           ))}
         </div>
         <p className="mt-3 text-[20px] font-medium tracking-[-0.03em]">Still have questions?</p>
-        <Button className="mt-4" href="#contact">
-          Let’s talk
-        </Button>
+        <Button className="mt-4">Let’s talk</Button>
       </Reveal>
+      )}
     </section>
   );
 }

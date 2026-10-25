@@ -2,8 +2,10 @@
 
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import { projects } from "@/data";
+import { getProject, type Project } from "@/content";
 import { Button, SectionHead } from "./ui";
+
+const projects = ["haven-living", "orion-fitness", "amsgroupe", "nova-studio"].map((s) => getProject(s) as Project);
 
 export default function Projects() {
   const [i, setI] = useState(0);
@@ -53,13 +55,13 @@ export default function Projects() {
                   </div>
                 </dl>
                 <div className="flex-1" />
-                <p className="mt-8 border-t border-line pt-5 text-[15px] font-medium leading-[1.3] text-muted">{p.desc}</p>
+                <p className="mt-8 border-t border-line pt-5 text-[15px] font-medium leading-[1.3] text-muted">{p.summary}</p>
                 <div className="mt-5">
-                  <Button href="#projects">View project detail</Button>
+                  <Button href={`/projects/${p.slug}`}>View project detail</Button>
                 </div>
               </div>
               <div className="aspect-[4/3.6] overflow-hidden rounded-lg md:aspect-auto md:h-[420px]">
-                <img src={p.img} alt={p.title} className="h-full w-full object-cover" loading="lazy" />
+                <img src={p.cover} alt={p.title} className="h-full w-full object-cover" loading="lazy" />
               </div>
             </article>
           ))}

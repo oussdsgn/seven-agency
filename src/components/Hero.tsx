@@ -26,7 +26,7 @@ function Arcs() {
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pb-24 pt-40 md:pt-[200px]">
+    <section className="relative overflow-hidden pb-24 pt-40 md:pt-[200px]">
       <Arcs />
       {tiles.map((t, i) => (
         <motion.div
@@ -70,8 +70,8 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.35 }}
           className="relative mt-8 flex flex-wrap justify-center gap-4"
         >
-          <Button href="#contact">Discuss your ideas</Button>
-          <Button href="#services" variant="dark">
+          <Button>Discuss your ideas</Button>
+          <Button href="/#services" variant="dark">
             View services
           </Button>
           <HandNote className="absolute -left-14 top-9 max-sm:hidden" flip>

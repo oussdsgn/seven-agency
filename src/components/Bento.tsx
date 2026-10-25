@@ -2,6 +2,7 @@
 
 import { AnimatePresence, animate, motion, useInView } from "motion/react";
 import { useEffect, useRef, useState } from "react";
+import { CAL_URL } from "@/content";
 import { strategySlides } from "@/data";
 import { Button, Panel, Reveal } from "./ui";
 
@@ -114,7 +115,7 @@ export default function Bento() {
           <Strategy />
           <div className="orange-grad flex flex-col items-center rounded-lg p-5 text-center sm:col-span-2">
             <h3 className="text-[22px] font-medium tracking-[-0.03em]">Discuss your project</h3>
-            <Button className="mt-8 !text-sm">Schedule a call - 15 mins free</Button>
+            <Button href={CAL_URL} className="mt-8 !text-sm">Schedule a call - 15 mins free</Button>
             <p className="mt-2 text-sm font-medium text-ink/70">No pressure, just a thoughtful chat.</p>
             <div className="min-h-12 flex-1" />
           </div>

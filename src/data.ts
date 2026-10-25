@@ -62,37 +62,6 @@ export const services = [
   },
 ];
 
-export const projects = [
-  {
-    title: "La Cité Asiatique",
-    industry: "Resturant & Catering",
-    scope: "Brand Direction + Web Design",
-    desc: "Created a warm, lifestyle-driven digital presence that highlights interior quality, storytelling, and modern aesthetics.",
-    img: "/img/p-lacite.jpg",
-  },
-  {
-    title: "Twsel Express Logistics",
-    industry: "Logistics",
-    scope: "Brand Identity + Web UI",
-    desc: "Designed a motivating mobile experience with clearer progress tracking, smoother usability, and stronger daily engagement.",
-    img: "/img/p-twsel.jpg",
-  },
-  {
-    title: "AMS Groupe Website",
-    industry: "Human Resources",
-    scope: "Brand Identity + Website",
-    desc: "Elevated the portfolio design to showcase craftsmanship with greater clarity, cohesion, and visual impact.",
-    img: "/img/p-ams-groupe.jpg",
-  },
-  {
-    title: "AMS Agency",
-    industry: "Creative & Consulting",
-    scope: "Website Design + Brand Refresh",
-    desc: "Unified the brand and service experience to better express value, improve navigation, and strengthen conversions.",
-    img: "/img/p-ams-agency.jpg",
-  },
-];
-
 export const steps = [
   {
     title: "Strategy",
@@ -182,12 +151,6 @@ export const testimonials = [
     role: "Data Science Consultant",
     img: "/img/av2.jpg",
   },
-];
-
-export const posts = [
-  { tag: "Branding", title: "Why storytelling shapes brand success", date: "Dec 20, 2025", author: "Mason Clark", img: "/img/b1.jpg" },
-  { tag: "Design", title: "The future of scalable design systems in 2025", date: "Jan 2, 2026", img: "/img/b2.jpg" },
-  { tag: "Development", title: "Built for High-Performance in Framer", date: "Dec 6, 2025", img: "/img/b3.jpg" },
 ];
 
 export const faqs = [

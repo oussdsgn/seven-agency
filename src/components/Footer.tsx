@@ -1,12 +1,14 @@
+import Link from "next/link";
+import { MAPS_URL, socials } from "@/content";
 import { contact } from "@/data";
 
 const links = [
-  ["Home", "#top"],
-  ["About us", "#about"],
-  ["Projects", "#projects"],
-  ["Blog", "#blog"],
-  ["Contact us", "#contact"],
-  ["Privacy Policy", "#"],
+  ["Home", "/"],
+  ["About us", "/about-us"],
+  ["Projects", "/projects"],
+  ["Blog", "/blog"],
+  ["Contact us", "/contact-us"],
+  ["Privacy Policy", "/legal-pages/privacy-policy"],
 ];
 
 export default function Footer() {
@@ -22,9 +24,9 @@ export default function Footer() {
           <ul className="mt-5 grid grid-flow-col grid-rows-4 gap-x-10 gap-y-2.5 text-sm font-medium">
             {links.map(([l, h], i) => (
               <li key={l}>
-                <a href={h} className={`hover:text-brand ${i === 0 ? "text-brand" : ""}`}>
+                <Link href={h} className={`hover:text-brand ${i === 0 ? "text-brand" : ""}`}>
                   {l}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -38,17 +40,22 @@ export default function Footer() {
             <a href={`mailto:${contact.email}`} className="block hover:text-brand">
               {contact.email}
             </a>
-            <p className="max-w-[200px]">{contact.address}</p>
+            <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="block max-w-[200px] hover:text-brand">
+              {contact.address}
+            </a>
           </div>
           <p className="mt-6 text-[11px] font-semibold uppercase tracking-[0.15em] text-muted">Follow us on</p>
           <div className="mt-3 flex gap-2">
-            {[
-              ["s1.svg", "Instagram"],
-              ["s2.svg", "LinkedIn"],
-              ["s3.svg", "X"],
-            ].map(([i, l]) => (
-              <a key={i} href="#" aria-label={l} className="flex h-6 w-6 items-center justify-center rounded bg-ink hover:bg-brand">
-                <img src={`/img/${i}`} alt="" className="h-3.5 w-3.5" />
+            {socials.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={s.label}
+                className="flex h-6 w-6 items-center justify-center rounded bg-ink hover:bg-brand"
+              >
+                <img src={s.icon} alt="" className="h-3.5 w-3.5" />
               </a>
             ))}
           </div>

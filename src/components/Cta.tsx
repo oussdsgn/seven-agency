@@ -1,8 +1,9 @@
+import { CAL_URL } from "@/content";
 import { Button, Panel, Reveal } from "./ui";
 
 export default function Cta() {
   return (
-    <section id="contact" className="relative mx-auto max-w-[1032px] px-4 pb-20">
+    <section className="relative mx-auto max-w-[1032px] px-4 pb-20 pt-8">
       <Reveal>
         <Panel className="p-4">
           <div className="orange-grad relative overflow-hidden rounded-lg px-6 py-12 md:px-14 md:py-16">
@@ -31,7 +32,9 @@ export default function Cta() {
                   </div>
                   <p className="mt-4 text-[20px] font-medium tracking-[-0.03em]">Quick 15-minute call</p>
                   <p className="text-sm font-medium text-muted">Pick a time that works for you.</p>
-                  <Button className="mt-5 w-full">Book a free call</Button>
+                  <Button href={CAL_URL} className="mt-5 w-full">
+                    Book a free call
+                  </Button>
                 </div>
                 <img src="/img/cursor.svg" alt="" className="float absolute -right-6 bottom-16 w-[88px]" />
               </div>

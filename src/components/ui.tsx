@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 export function Eyebrow({ children, className = "" }: { children: ReactNode; className?: string }) {
@@ -17,22 +18,25 @@ export function Eyebrow({ children, className = "" }: { children: ReactNode; cla
 
 type BtnProps = { children: ReactNode; href?: string; variant?: "orange" | "dark" | "light"; className?: string };
 
-export function Button({ children, href = "#contact", variant = "orange", className = "" }: BtnProps) {
+export function Button({ children, href = "/contact-us", variant = "orange", className = "" }: BtnProps) {
   const styles = {
     orange: "bg-brand text-white shadow-[inset_0_-2px_0_rgba(0,0,0,0.12)] hover:bg-brand-dark",
     dark: "bg-ink text-white hover:bg-black",
     light: "bg-white text-ink hover:bg-chip",
   }[variant];
+  const external = href.startsWith("http");
+  const Tag = external ? "a" : Link;
   return (
-    <a
+    <Tag
       href={href}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={`group relative inline-flex items-center justify-center overflow-hidden rounded-lg px-[22px] py-2.5 text-base font-medium leading-[1.2] transition-colors ${styles} ${className}`}
     >
       <span className="block transition-transform duration-300 group-hover:-translate-y-[150%]">{children}</span>
       <span className="absolute inset-0 flex translate-y-[150%] items-center justify-center transition-transform duration-300 group-hover:translate-y-0">
         {children}
       </span>
-    </a>
+    </Tag>
   );
 }
 

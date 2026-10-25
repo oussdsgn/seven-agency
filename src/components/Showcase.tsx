@@ -32,7 +32,7 @@ export default function Showcase() {
           <br />
           Designs
         </p>
-        <Button href="#projects">Explore all Projects</Button>
+        <Button href="/projects">Explore all Projects</Button>
       </div>
     </section>
   );
