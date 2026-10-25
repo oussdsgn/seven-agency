@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ink: #060612;
+  --color-muted: #69686e;
+  --color-brand: #ff6321;
+  --color-brand-dark: #cf4e17;
+  --color-page: #f5f4f3;
+  --color-surface: #faf9f8;
+  --color-chip: #f4f2f0;
+  --color-line: #eeecea;
+  --font-sans: var(--font-geist), sans-serif;
+  --font-hand: var(--font-caveat), cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "cv09", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+.h-section {
+  font-size: clamp(36px, 5vw, 52px);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+}
+
+.orange-grad {
+  background: radial-gradient(120% 140% at 0% 0%, #ffc983 0%, #ffad6b 45%, #ff7a3a 100%);
+}
+
+@keyframes marquee-l {
+  to { transform: translateX(-50%); }
+}
+@keyframes marquee-r {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+.marquee-l { animation: marquee-l 60s linear infinite; }
+.marquee-r { animation: marquee-r 60s linear infinite; }
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-14px, 10px); }
+}
+.float { animation: float 4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-l, .marquee-r, .float { animation: none; }
+}
