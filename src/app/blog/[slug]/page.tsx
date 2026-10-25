@@ -43,7 +43,7 @@ export default async function PostPage({ params }: Props) {
       <article className="mx-auto max-w-[664px] px-4 py-16">
         {p.body.map((b) => (
           <Reveal key={b.h} className="mt-10 first:mt-0">
-            <h2 className="text-[28px] font-medium tracking-[-0.03em]">{b.h}</h2>
+            <h2 className="text-[28px] font-semibold tracking-[-0.03em]">{b.h}</h2>
             {b.p && <p className="mt-3 text-[15px] font-medium leading-[1.4] text-muted">{b.p}</p>}
             {b.list && (
               <ul className="mt-3 list-disc space-y-1 pl-5 text-[15px] font-medium text-muted">

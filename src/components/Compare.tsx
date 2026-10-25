@@ -55,7 +55,7 @@ export default function Compare() {
 
       <Reveal className="mt-12 grid grid-cols-2 overflow-hidden rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.05)]">
         <div className="bg-white">
-          <h3 className="border-b border-line px-5 py-5 text-[18px] font-medium tracking-[-0.03em] md:text-[22px]">Other agencies</h3>
+          <h3 className="border-b border-line px-5 py-5 text-[18px] font-semibold tracking-[-0.03em] md:text-[22px]">Other agencies</h3>
           {compare.others.map((t) => (
             <p key={t} className="flex items-center gap-2 border-b border-line px-5 py-[14px] text-sm font-medium text-muted last:border-0 md:text-base">
               <span className="text-[#b3b1af]">›</span>
@@ -64,7 +64,7 @@ export default function Compare() {
           ))}
         </div>
         <div className="orange-grad text-white">
-          <h3 className="border-b border-white/25 px-5 py-5 text-[18px] font-medium tracking-[-0.03em] text-ink md:text-[22px]">Seven Agency</h3>
+          <h3 className="border-b border-white/25 px-5 py-5 text-[18px] font-semibold tracking-[-0.03em] text-ink md:text-[22px]">Seven Agency</h3>
           {compare.us.map((t) => (
             <p key={t} className="flex items-center gap-2 border-b border-white/25 px-5 py-[14px] text-sm font-medium text-ink last:border-0 md:text-base">
               <span>›</span>

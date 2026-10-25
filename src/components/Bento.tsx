@@ -48,7 +48,7 @@ function Csat() {
   return (
     <div className="flex flex-col items-center justify-between rounded-lg bg-white p-5 text-center">
       <div>
-        <h3 className="text-[22px] font-medium tracking-[-0.03em]">CSAT</h3>
+        <h3 className="text-[22px] font-semibold tracking-[-0.03em]">CSAT</h3>
         <p className="mt-1 text-sm font-medium text-muted">Measures and improves client satisfaction.</p>
       </div>
       <div className="mt-10">
@@ -85,7 +85,7 @@ function Strategy() {
       <div className="mt-3 flex items-end justify-between gap-4">
         <AnimatePresence mode="wait">
           <motion.div key={i} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }}>
-            <h3 className="text-[22px] font-medium tracking-[-0.03em]">{s.title}</h3>
+            <h3 className="text-[22px] font-semibold tracking-[-0.03em]">{s.title}</h3>
             <p className="mt-1 text-sm font-medium text-muted">{s.text}</p>
           </motion.div>
         </AnimatePresence>
@@ -114,13 +114,13 @@ export default function Bento() {
           <Csat />
           <Strategy />
           <div className="orange-grad flex flex-col items-center rounded-lg p-5 text-center sm:col-span-2">
-            <h3 className="text-[22px] font-medium tracking-[-0.03em]">Discuss your project</h3>
+            <h3 className="text-[22px] font-semibold tracking-[-0.03em]">Discuss your project</h3>
             <Button href={CAL_URL} className="mt-8 !text-sm">Schedule a call - 15 mins free</Button>
             <p className="mt-2 text-sm font-medium text-ink/70">No pressure, just a thoughtful chat.</p>
             <div className="min-h-12 flex-1" />
           </div>
           <div className="rounded-lg bg-white p-5 text-center sm:col-span-2">
-            <h3 className="text-[22px] font-medium tracking-[-0.03em]">SEO ready &amp; fast performance</h3>
+            <h3 className="text-[22px] font-semibold tracking-[-0.03em]">SEO ready &amp; fast performance</h3>
             <p className="mt-1 text-sm font-medium text-muted">Optimized for search rankings and blazing-fast speed.</p>
             <div className="mt-8 flex items-end justify-around">
               <Gauge value={99} label="Performance" />

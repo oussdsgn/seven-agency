@@ -23,7 +23,7 @@ export default function Services() {
           <Reveal key={s.title} delay={i * 0.05}>
             <article className="rounded-lg bg-white p-5">
               <div className="flex items-center justify-between border-b border-line pb-4">
-                <h3 className="text-[22px] font-medium tracking-[-0.03em]">{s.title}</h3>
+                <h3 className="text-[22px] font-semibold tracking-[-0.03em]">{s.title}</h3>
                 <span className="flex h-8 w-8 items-center justify-center overflow-hidden rounded-md border border-line">
                   <img src={s.icon} alt="" className="h-full w-full object-cover" />
                 </span>

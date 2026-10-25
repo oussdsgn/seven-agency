@@ -19,7 +19,7 @@ export default function Faq({ showMore = true }: { showMore?: boolean }) {
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
                   aria-expanded={isOpen}
-                  className="flex w-full items-center justify-between gap-4 px-3 py-4 text-left text-[17px] font-medium tracking-[-0.03em] md:text-[20px]"
+                  className="flex w-full items-center justify-between gap-4 px-3 py-4 text-left text-[17px] font-semibold tracking-[-0.03em] md:text-[20px]"
                 >
                   {i + 1}. {f.q}
                   <span className={`flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full bg-ink text-sm leading-none text-white transition-transform ${isOpen ? "rotate-45" : ""}`}>
@@ -45,7 +45,7 @@ export default function Faq({ showMore = true }: { showMore?: boolean }) {
             <img key={a} src={`/img/${a}`} alt="" className={`h-9 w-9 rounded-full border-2 border-page object-cover ${k ? "-ml-2" : ""}`} />
           ))}
         </div>
-        <p className="mt-3 text-[20px] font-medium tracking-[-0.03em]">Still have questions?</p>
+        <p className="mt-3 text-[20px] font-semibold tracking-[-0.03em]">Still have questions?</p>
         <Button className="mt-4">Let’s talk</Button>
       </Reveal>
       )}

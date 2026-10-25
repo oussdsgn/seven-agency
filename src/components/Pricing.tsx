@@ -11,7 +11,7 @@ export default function Pricing() {
           <div className="relative overflow-hidden rounded-lg bg-white p-4">
             <div className="rounded-lg border border-line bg-page p-5">
               <p className="text-xs font-semibold uppercase tracking-[0.15em] text-muted">{starter.name}</p>
-              <p className="mt-3 text-[36px] font-medium tracking-[-0.03em]">
+              <p className="mt-3 text-[36px] font-semibold tracking-[-0.03em]">
                 {starter.price} <span className="text-base tracking-normal">/ project</span>
               </p>
               <p className="mt-3 max-w-[260px] text-[15px] font-medium leading-[1.3] text-muted">{starter.desc}</p>
@@ -35,7 +35,7 @@ export default function Pricing() {
                 <p className="text-xs font-semibold uppercase tracking-[0.15em] text-muted">{growth.name}</p>
                 <span className="rounded-full bg-brand px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-white">Popular</span>
               </div>
-              <p className="mt-3 text-[36px] font-medium tracking-[-0.03em]">
+              <p className="mt-3 text-[36px] font-semibold tracking-[-0.03em]">
                 {growth.price} <span className="text-base tracking-normal">/ project</span>
               </p>
               <p className="mt-3 max-w-[260px] text-[15px] font-medium leading-[1.3] text-muted">{growth.desc}</p>

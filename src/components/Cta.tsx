@@ -30,7 +30,7 @@ export default function Cta() {
                     <span className="text-muted">+</span>
                     <span className="flex h-11 w-11 items-center justify-center rounded-full bg-ink text-sm font-medium text-white">You</span>
                   </div>
-                  <p className="mt-4 text-[20px] font-medium tracking-[-0.03em]">Quick 15-minute call</p>
+                  <p className="mt-4 text-[20px] font-semibold tracking-[-0.03em]">Quick 15-minute call</p>
                   <p className="text-sm font-medium text-muted">Pick a time that works for you.</p>
                   <Button href={CAL_URL} className="mt-5 w-full">
                     Book a free call

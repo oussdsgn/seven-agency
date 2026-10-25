@@ -50,7 +50,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="mt-6 text-[44px] font-medium leading-[1.1] tracking-[-0.04em] sm:text-[64px] md:text-[72px]"
+          className="mt-6 text-[44px] font-semibold leading-[1.1] tracking-[-0.04em] sm:text-[64px] md:text-[72px]"
         >
           We design brands
           <br />

@@ -71,12 +71,12 @@ export default async function ProjectPage({ params }: Props) {
 
       <article className="mx-auto max-w-[664px] px-4 py-16">
         <Reveal>
-          <h2 className="text-[28px] font-medium tracking-[-0.03em]">The Challenge</h2>
+          <h2 className="text-[28px] font-semibold tracking-[-0.03em]">The Challenge</h2>
           <p className="mt-3 text-[15px] font-medium leading-[1.4] text-muted">{p.challenge.text}</p>
           <Points items={p.challenge.points} />
         </Reveal>
         <Reveal className="mt-12">
-          <h2 className="text-[28px] font-medium tracking-[-0.03em]">The Solution</h2>
+          <h2 className="text-[28px] font-semibold tracking-[-0.03em]">The Solution</h2>
           <p className="mt-3 text-[15px] font-medium leading-[1.4] text-muted">{p.solution}</p>
           <Panel className={`mt-8 grid gap-2 p-2 ${p.gallery.length === 3 ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
             {p.gallery.map((g) => (
@@ -85,7 +85,7 @@ export default async function ProjectPage({ params }: Props) {
           </Panel>
         </Reveal>
         <Reveal className="mt-12">
-          <h2 className="text-[28px] font-medium tracking-[-0.03em]">The Result</h2>
+          <h2 className="text-[28px] font-semibold tracking-[-0.03em]">The Result</h2>
           <p className="mt-3 text-[15px] font-medium leading-[1.4] text-muted">{p.result.text}</p>
           <Points items={p.result.points} />
         </Reveal>

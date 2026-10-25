@@ -43,7 +43,7 @@ export default function Projects() {
               }`}
             >
               <div className="flex flex-col">
-                <h3 className="text-[28px] font-medium leading-[1.2] tracking-[-0.03em] md:text-[36px]">{p.title}</h3>
+                <h3 className="text-[28px] font-semibold leading-[1.2] tracking-[-0.03em] md:text-[36px]">{p.title}</h3>
                 <dl className="mt-4 space-y-1 text-sm font-medium">
                   <div className="flex gap-1.5">
                     <dt className="text-muted">Industry:</dt>

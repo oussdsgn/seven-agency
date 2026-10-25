@@ -21,7 +21,7 @@ export default function ContactPage() {
         <Reveal>
           <Panel className="grid gap-2 p-4 md:grid-cols-2">
             <div className="rounded-lg bg-white p-5">
-              <h2 className="text-[22px] font-medium tracking-[-0.03em]">Start a Conversation</h2>
+              <h2 className="text-[22px] font-semibold tracking-[-0.03em]">Start a Conversation</h2>
               <dl className="mt-5 space-y-2.5">
                 {rows.map(([k, v, href]) => (
                   <div key={k} className="flex flex-wrap items-baseline gap-2">

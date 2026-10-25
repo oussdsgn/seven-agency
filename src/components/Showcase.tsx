@@ -27,7 +27,7 @@ export default function Showcase() {
         <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-white shadow-sm">
           <img src="/img/mark-small.svg" alt="" className="h-4 w-auto" />
         </span>
-        <p className="text-center text-[24px] font-medium leading-[1.2] tracking-[-0.03em] md:text-[36px]">
+        <p className="text-center text-[24px] font-semibold leading-[1.2] tracking-[-0.03em] md:text-[36px]">
           50+ Premium
           <br />
           Designs

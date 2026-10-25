@@ -70,7 +70,7 @@ export default function PrivacyPage() {
         </p>
         {sections.map((s) => (
           <section key={s.h} className="mt-12">
-            <h2 className="text-[28px] font-medium tracking-[-0.03em] text-ink">{s.h}</h2>
+            <h2 className="text-[28px] font-semibold tracking-[-0.03em] text-ink">{s.h}</h2>
             {s.p && <p className="mt-3">{s.p}</p>}
             {s.list && (
               <ul className="mt-3 list-disc space-y-1 pl-5">
@@ -90,7 +90,7 @@ export default function PrivacyPage() {
           </section>
         ))}
         <section className="mt-12">
-          <h2 className="text-[28px] font-medium tracking-[-0.03em] text-ink">9. Contact us</h2>
+          <h2 className="text-[28px] font-semibold tracking-[-0.03em] text-ink">9. Contact us</h2>
           <p className="mt-3">If you have any questions about this Privacy Policy or how we handle your data, please contact us at:</p>
           <p className="mt-3">
             Email:{" "}

@@ -27,7 +27,7 @@ export default function AboutPage() {
           <Reveal>
             <Panel className="grid gap-2 p-4 md:grid-cols-2">
               <div className="flex flex-col rounded-lg bg-white p-5">
-                <h2 className="max-w-[380px] text-[28px] font-medium leading-[1.2] tracking-[-0.03em] md:text-[36px]">
+                <h2 className="max-w-[380px] text-[28px] font-semibold leading-[1.2] tracking-[-0.03em] md:text-[36px]">
                   A studio built on clarity, craft and commitment
                 </h2>
                 <div className="min-h-16 flex-1" />
@@ -55,7 +55,7 @@ export default function AboutPage() {
         <Reveal className="relative mt-8 overflow-hidden rounded-xl">
           <img src="/img/mission.jpg" alt="" className="h-[520px] w-full object-cover md:h-[330px]" />
           <div className="absolute inset-x-4 bottom-4 rounded-lg bg-white p-5 md:inset-x-auto md:bottom-auto md:right-5 md:top-5 md:w-[300px]">
-            <h3 className="border-b border-line pb-3 text-[22px] font-medium tracking-[-0.03em]">Core Values</h3>
+            <h3 className="border-b border-line pb-3 text-[22px] font-semibold tracking-[-0.03em]">Core Values</h3>
             <ul className="mt-4 space-y-3">
               {values.map((v) => (
                 <li key={v} className="flex items-center gap-2 text-sm font-medium">
@@ -78,8 +78,8 @@ export default function AboutPage() {
           <Panel className="grid gap-2 p-4 md:grid-cols-3">
             {stats.map((s) => (
               <div key={s.title} className="flex flex-col rounded-lg bg-white p-5">
-                <h3 className="text-[20px] font-medium tracking-[-0.03em]">{s.title}</h3>
-                <p className="mt-10 text-[64px] font-medium leading-none tracking-[-0.04em]">
+                <h3 className="text-[20px] font-semibold tracking-[-0.03em]">{s.title}</h3>
+                <p className="mt-10 text-[64px] font-semibold leading-none tracking-[-0.04em]">
                   <Counter to={s.value} />
                   <span className="text-brand">{s.suffix}</span>
                 </p>

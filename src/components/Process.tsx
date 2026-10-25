@@ -70,7 +70,7 @@ export default function Process() {
                 transition={{ duration: 0.35 }}
                 className="flex flex-col items-center"
               >
-                <h3 className="text-[28px] font-medium tracking-[-0.03em]">{s.title}</h3>
+                <h3 className="text-[28px] font-semibold tracking-[-0.03em]">{s.title}</h3>
                 <p className="mt-2 max-w-[340px] text-[15px] font-medium leading-[1.3] text-muted">{s.desc}</p>
                 <p className="mt-5 border-t border-[#e4e1dd] px-4 pt-4 text-[11px] font-semibold uppercase tracking-[0.15em] text-muted">
                   {s.tags.join("  •  ")}
