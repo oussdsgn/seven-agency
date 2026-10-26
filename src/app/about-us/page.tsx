@@ -81,7 +81,7 @@ export default function AboutPage() {
                 <h3 className="text-[20px] font-semibold tracking-[-0.03em]">{s.title}</h3>
                 <p className="mt-10 text-[64px] font-semibold leading-none tracking-[-0.04em]">
                   <Counter to={s.value} />
-                  <span className="text-brand">{s.suffix}</span>
+                  <span className="text-brand-ink">{s.suffix}</span>
                 </p>
                 <p className="mt-6 border-t border-line pt-4 text-[15px] font-medium leading-[1.35] text-muted">{s.text}</p>
               </div>

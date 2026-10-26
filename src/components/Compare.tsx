@@ -27,7 +27,7 @@ const copy: Token[] = [
 
 function Word({ tok, i, total, progress }: { tok: Token; i: number; total: number; progress: MotionValue<number> }) {
   const start = i / total;
-  const opacity = useTransform(progress, [start, start + 1 / total], [0.15, 1]);
+  const opacity = useTransform(progress, [start, start + 1 / total], [0.4, 1]);
   if (tok.br) return <span className="block h-6 w-full" />;
   if (tok.toggle)
     return (
@@ -36,7 +36,7 @@ function Word({ tok, i, total, progress }: { tok: Token; i: number; total: numbe
       </motion.span>
     );
   return (
-    <motion.span style={{ opacity }} className={`mr-[0.25em] ${tok.hl ? "text-brand" : ""}`}>
+    <motion.span style={{ opacity }} className={`mr-[0.25em] ${tok.hl ? "text-brand-ink" : ""}`}>
       {tok.t}
     </motion.span>
   );
@@ -58,7 +58,7 @@ export default function Compare() {
           <h3 className="border-b border-line px-5 py-5 text-[18px] font-semibold tracking-[-0.03em] md:text-[22px]">Other agencies</h3>
           {compare.others.map((t) => (
             <p key={t} className="flex items-center gap-2 border-b border-line px-5 py-[14px] text-sm font-medium text-muted last:border-0 md:text-base">
-              <span className="text-[#b3b1af]">›</span>
+              <span aria-hidden="true" className="text-muted">›</span>
               {t}
             </p>
           ))}
@@ -80,7 +80,7 @@ export default function Compare() {
           {["av1.jpg", "av2.jpg", "av3.jpg"].map((a) => (
             <img key={a} src={`/img/${a}`} alt="" className="-mr-2 h-9 w-9 rounded-full border-2 border-page object-cover" />
           ))}
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-page bg-white text-[11px] font-semibold">+54</span>
+          <span className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-page bg-white text-xs font-semibold">+54</span>
         </div>
         <div className="text-sm">
           <div className="flex items-center gap-2">
@@ -88,7 +88,7 @@ export default function Compare() {
             <span className="font-medium">4.9/5</span>
           </div>
           <p className="text-muted">
-            Trusted by <span className="text-brand">54+</span> visionary brands
+            Trusted by <span className="text-brand-ink">54+</span> visionary brands
           </p>
         </div>
       </Reveal>

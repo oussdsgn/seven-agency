@@ -20,7 +20,7 @@ type BtnProps = { children: ReactNode; href?: string; variant?: "orange" | "dark
 
 export function Button({ children, href = "/contact-us", variant = "orange", className = "" }: BtnProps) {
   const styles = {
-    orange: "bg-brand text-white shadow-[inset_0_-2px_0_rgba(0,0,0,0.12)] hover:bg-brand-dark",
+    orange: "bg-brand-ink text-white shadow-[inset_0_-2px_0_rgba(0,0,0,0.12)] hover:bg-brand-dark",
     dark: "bg-ink text-white hover:bg-black",
     light: "bg-white text-ink hover:bg-chip",
   }[variant];
@@ -44,7 +44,7 @@ export function HandNote({ children, className = "", flip = false }: { children:
   return (
     <div className={`pointer-events-none flex flex-col items-start ${className}`}>
       <img src="/img/arrow-curve.svg" alt="" className={`h-6 w-8 ${flip ? "-scale-x-100" : ""} -rotate-[25deg]`} />
-      <span className="font-hand text-lg leading-none text-brand">{children}</span>
+      <span className="font-hand text-lg leading-none text-brand-ink">{children}</span>
     </div>
   );
 }
@@ -76,7 +76,7 @@ export function SectionHead({ eyebrow, title, note, className = "" }: { eyebrow:
 export function Check({ light = false }: { light?: boolean }) {
   return (
     <span
-      className={`flex h-4 w-4 shrink-0 items-center justify-center rounded-full ${light ? "bg-white text-brand" : "bg-chip text-ink"}`}
+      className={`flex h-4 w-4 shrink-0 items-center justify-center rounded-full ${light ? "bg-white text-brand-ink" : "bg-chip text-ink"}`}
     >
       <svg viewBox="0 0 12 12" className="h-2.5 w-2.5" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M2.5 6.2 5 8.5l4.5-5" strokeLinecap="round" strokeLinejoin="round" />

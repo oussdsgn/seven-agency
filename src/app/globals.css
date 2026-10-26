@@ -3,8 +3,11 @@
 @theme inline {
   --color-ink: #060612;
   --color-muted: #69686e;
+  /* Bright orange is for shapes and decoration only; text and buttons use
+     brand-ink, which passes WCAG AA contrast on white and on the page. */
   --color-brand: #ff6321;
-  --color-brand-dark: #cf4e17;
+  --color-brand-ink: #c2410c;
+  --color-brand-dark: #9a3412;
   --color-page: #f5f4f3;
   --color-surface: #faf9f8;
   --color-chip: #f4f2f0;

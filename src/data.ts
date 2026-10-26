@@ -49,7 +49,7 @@ export const services = [
   },
   { title: "Web Development", icon: "/img/sv-web.gif", desc: sharedDesc, tags: ["Framer", "Full Stack", "Figma"] },
   {
-    title: "Digiral Marketing",
+    title: "Digital Marketing",
     icon: "/img/sv-marketing.png",
     desc: sharedDesc,
     tags: ["Social Media", "Community Management", "Ads"],

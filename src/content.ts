@@ -133,7 +133,7 @@ export const projectList: Project[] = [
     title: "La Cité Asiatique",
     summary: "Created a warm, lifestyle-driven digital presence that highlights interior quality, storytelling, and modern aesthetics.",
     scope: "Brand Direction + Web Design",
-    industry: "Resturant & Catering",
+    industry: "Restaurant & Catering",
     timeline: "7 Weeks",
     cover: "/img/p-lacite.jpg",
     hero: "/img/p-lacite.jpg",
@@ -179,7 +179,7 @@ export const projectList: Project[] = [
     gallery: ["/img/twsel-g1.png", "/img/twsel-g2.png", "/img/twsel-g3.png"],
     result: {
       text: "Engagement increased across key metrics as users found it easier to track habits and stay consistent. The refreshed mobile experience drove stronger retention and daily activity.",
-      points: ["Higher daily active users", "Reduced onboarding drop-off", "Longer session durationsa"],
+      points: ["Higher daily active users", "Reduced onboarding drop-off", "Longer session durations"],
     },
     quote: {
       text: "The new interface motivates users daily. Tracking progress is clearer, faster, and far more engaging than before.",

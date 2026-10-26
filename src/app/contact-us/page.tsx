@@ -25,9 +25,9 @@ export default function ContactPage() {
               <dl className="mt-5 space-y-2.5">
                 {rows.map(([k, v, href]) => (
                   <div key={k} className="flex flex-wrap items-baseline gap-2">
-                    <dt className="text-[11px] font-semibold uppercase tracking-[0.15em] text-muted">{k}</dt>
+                    <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-muted">{k}</dt>
                     <dd>
-                      <a href={href} {...(href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="text-[15px] font-medium hover:text-brand">
+                      <a href={href} {...(href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="inline-block py-1 text-[15px] font-medium hover:text-brand-ink">
                         {v}
                       </a>
                     </dd>

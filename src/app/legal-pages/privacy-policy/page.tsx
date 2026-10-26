@@ -94,7 +94,7 @@ export default function PrivacyPage() {
           <p className="mt-3">If you have any questions about this Privacy Policy or how we handle your data, please contact us at:</p>
           <p className="mt-3">
             Email:{" "}
-            <a href={`mailto:${contact.email}`} className="text-ink hover:text-brand">
+            <a href={`mailto:${contact.email}`} className="text-ink hover:text-brand-ink">
               {contact.email}
             </a>
           </p>

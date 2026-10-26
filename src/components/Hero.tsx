@@ -54,7 +54,7 @@ export default function Hero() {
         >
           We design brands
           <br />
-          that move <span className="text-brand">people</span>
+          that move <span className="text-brand-ink">people</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -88,7 +88,7 @@ export default function Hero() {
           <div className="flex items-center gap-4">
             <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#dcd8d4]" />
             <p className="text-xs font-semibold uppercase tracking-[0.15em] text-muted">
-              Trusted by 40+ national an and international leaders
+              Trusted by 40+ national and international leaders
             </p>
             <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#dcd8d4]" />
           </div>

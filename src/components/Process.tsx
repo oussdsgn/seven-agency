@@ -30,8 +30,8 @@ export default function Process() {
         </div>
 
         <div className="relative mt-10 w-full max-w-[1100px]">
-          <p className="text-center text-[11px] font-semibold uppercase tracking-[0.15em] text-muted">Step</p>
-          <div className="relative z-10 mx-auto mt-2 flex h-10 w-10 items-center justify-center rounded-md bg-brand text-base font-medium text-white shadow-[0_6px_16px_rgba(255,99,33,0.35)]">
+          <p className="text-center text-xs font-semibold uppercase tracking-[0.15em] text-muted">Step</p>
+          <div className="relative z-10 mx-auto mt-2 flex h-10 w-10 items-center justify-center rounded-md bg-brand-ink text-base font-medium text-white shadow-[0_6px_16px_rgba(255,99,33,0.35)]">
             <AnimatePresence mode="wait">
               <motion.span key={step} initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: -10, opacity: 0 }}>
                 {pad(step)}
@@ -72,7 +72,7 @@ export default function Process() {
               >
                 <h3 className="text-[28px] font-semibold tracking-[-0.03em]">{s.title}</h3>
                 <p className="mt-2 max-w-[340px] text-[15px] font-medium leading-[1.3] text-muted">{s.desc}</p>
-                <p className="mt-5 border-t border-[#e4e1dd] px-4 pt-4 text-[11px] font-semibold uppercase tracking-[0.15em] text-muted">
+                <p className="mt-5 border-t border-[#e4e1dd] px-4 pt-4 text-xs font-semibold uppercase tracking-[0.15em] text-muted">
                   {s.tags.join("  •  ")}
                 </p>
               </motion.div>
@@ -83,14 +83,17 @@ export default function Process() {
             <p className="mt-6 text-xs font-semibold tracking-[0.1em] text-muted">
               {pad(step)}/{pad(steps.length - 1)}
             </p>
-            <div className="mt-2 flex gap-1">
+            <div className="mt-1 flex">
               {steps.map((_, k) => (
                 <button
                   key={k}
                   aria-label={`Step ${k + 1}`}
+                  aria-current={k === step}
                   onClick={() => jump(k)}
-                  className={`h-1.5 w-1.5 rounded-full ${k === step ? "bg-brand" : "bg-[#d7d4d0]"}`}
-                />
+                  className="flex h-6 w-6 items-center justify-center"
+                >
+                  <span className={`block h-1.5 w-1.5 rounded-full ${k === step ? "bg-brand-ink" : "bg-[#a9a6a2]"}`} />
+                </button>
               ))}
             </div>
           </div>

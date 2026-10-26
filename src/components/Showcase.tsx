@@ -7,8 +7,13 @@ function Row({ imgs, dir }: { imgs: string[]; dir: "l" | "r" }) {
     <div className="overflow-hidden">
       <div className={`flex w-max gap-4 ${dir === "l" ? "marquee-l" : "marquee-r"}`}>
         {all.map((src, i) => (
-          <div key={i} className="h-[180px] w-[290px] shrink-0 overflow-hidden rounded-lg border-4 border-white bg-white shadow-sm md:h-[230px] md:w-[380px]">
-            <img src={`/img/${src}`} alt="" className="h-full w-full object-cover object-top" loading="lazy" />
+          <div key={i} aria-hidden={i >= imgs.length} className="h-[180px] w-[290px] shrink-0 overflow-hidden rounded-lg border-4 border-white bg-white shadow-sm md:h-[230px] md:w-[380px]">
+            <img
+              src={`/img/${src}`}
+              alt={i < imgs.length ? "Website designed by Seven Agency" : ""}
+              className="h-full w-full object-cover object-top"
+              loading="lazy"
+            />
           </div>
         ))}
       </div>

@@ -44,7 +44,7 @@ export function PostCard({ p, big = false }: { p: Post; big?: boolean }) {
     return (
       <Link href={`/blog/${p.slug}`} className="group grid gap-4 rounded-lg bg-white p-5 sm:grid-cols-2 md:col-span-2">
         <div className="flex flex-col">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-muted">{p.tag}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-muted">{p.tag}</p>
           <h3 className="mt-3 max-w-[260px] text-[20px] font-semibold leading-[1.2] tracking-[-0.03em]">{p.title}</h3>
           <p className="mt-3 text-sm font-medium text-muted">{p.date}</p>
           <div className="flex-1" />
@@ -60,7 +60,7 @@ export function PostCard({ p, big = false }: { p: Post; big?: boolean }) {
     );
   return (
     <Link href={`/blog/${p.slug}`} className="group flex min-h-[200px] flex-col rounded-lg bg-white p-5">
-      <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-muted">{p.tag}</p>
+      <p className="text-xs font-semibold uppercase tracking-[0.15em] text-muted">{p.tag}</p>
       <h3 className="mt-3 max-w-[220px] text-[20px] font-semibold leading-[1.2] tracking-[-0.03em]">{p.title}</h3>
       <div className="flex-1" />
       <div className="mt-4 flex items-end justify-between">

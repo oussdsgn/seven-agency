@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Caveat } from "next/font/google";
 import Cta from "@/components/Cta";
 import Footer from "@/components/Footer";
+import MotionProvider from "@/components/MotionProvider";
 import Nav from "@/components/Nav";
 import "./globals.css";
 
@@ -18,10 +19,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${geist.variable} ${caveat.variable} antialiased`}>
-        <Nav />
-        <main className="overflow-x-clip">{children}</main>
-        <Cta />
-        <Footer />
+        <MotionProvider>
+          <Nav />
+          <main className="overflow-x-clip">{children}</main>
+          <Cta />
+          <Footer />
+        </MotionProvider>
       </body>
     </html>
   );

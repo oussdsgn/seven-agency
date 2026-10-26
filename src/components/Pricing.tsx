@@ -33,7 +33,7 @@ export default function Pricing() {
             <div className="rounded-lg bg-white p-5 text-ink">
               <div className="flex items-center justify-between">
                 <p className="text-xs font-semibold uppercase tracking-[0.15em] text-muted">{growth.name}</p>
-                <span className="rounded-full bg-brand px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-white">Popular</span>
+                <span className="rounded-full bg-brand-ink px-2.5 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white">Popular</span>
               </div>
               <p className="mt-3 text-[36px] font-semibold tracking-[-0.03em]">
                 {growth.price} <span className="text-base tracking-normal">/ project</span>
@@ -42,7 +42,7 @@ export default function Pricing() {
             </div>
             <ul className="mt-6 space-y-3 px-1">
               {growth.features.map((f) => (
-                <li key={f} className="flex items-center gap-2 text-sm font-medium">
+                <li key={f} className="flex items-center gap-2 text-sm font-semibold text-ink">
                   <Check light />
                   {f}
                 </li>
@@ -58,7 +58,7 @@ export default function Pricing() {
           For agencies and enterprises needing custom strategy and execution.
         </p>
         <p className="mt-1 text-center">
-          <a href="#contact" className="text-sm font-medium text-brand hover:underline">
+          <a href="/contact-us" className="inline-block py-1 text-sm font-medium text-brand-ink hover:underline">
             Contact us ›
           </a>
         </p>

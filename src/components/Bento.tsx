@@ -37,7 +37,7 @@ function Gauge({ value, label, big = false }: { value: number; label: string; bi
         </svg>
         <span className={`absolute inset-0 flex items-center justify-center font-medium ${big ? "text-base" : "text-xs"}`}>{n}%</span>
       </div>
-      <span className="text-[11px] font-semibold uppercase tracking-[0.15em] text-muted">{label}</span>
+      <span className="text-xs font-semibold uppercase tracking-[0.15em] text-muted">{label}</span>
     </div>
   );
 }
@@ -52,7 +52,7 @@ function Csat() {
         <p className="mt-1 text-sm font-medium text-muted">Measures and improves client satisfaction.</p>
       </div>
       <div className="mt-10">
-        <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.15em] text-brand">{labels[active]}</p>
+        <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-brand-ink">{labels[active]}</p>
         <div className="flex gap-1.5">
           {[2, 1, 3, 4, 5].map((f, i) => (
             <button
